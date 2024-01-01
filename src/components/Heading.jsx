@@ -6,7 +6,7 @@ import Navbar from 'react-bootstrap/Navbar';
 
 const Heading = () => {
     return (
-        <Navbar expand="lg" className="bg-body-tertiary mb-5">
+        <Navbar expand="lg" className="bg-info py-4 mb-5">
       <Container fluid>
         <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />

@@ -1,6 +1,7 @@
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import { Link } from 'react-router-dom';
 import auth from '../Firebase/firebase.config';
 
 const Login = () => {
@@ -23,7 +24,7 @@ const Login = () => {
   }
 
     return (
-     <div className='w-50 mx-auto'>
+     <div className='w-25 mx-auto'>
      <h3 className='text-center text-primary fw-bold mb-4'>Login</h3>
      <Form onSubmit={handleLogin}>
      <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -42,6 +43,7 @@ const Login = () => {
        Submit
      </Button>
     </Form>
+    <p className='text-center '>New to this site <Link to='/register'>Register</Link></p>
      </div>
     );
 };
