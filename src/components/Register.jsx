@@ -4,6 +4,7 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import { Link } from 'react-router-dom';
 import auth from '../Firebase/firebase.config';
+import SocialLink from './SocialLink';
 
 const Register = () => {
 
@@ -81,6 +82,9 @@ const Register = () => {
       {success && <p className='text-success text-center'>User Created Successfully</p>}
        <p className='text-danger text-center'>{passError}</p>
        <p className='text-center '>Already have an account <Link to='/login'>login</Link></p>
+       <div>
+        <SocialLink></SocialLink>
+       </div>
         </div>
     );
 };
